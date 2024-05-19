@@ -33,7 +33,7 @@ public class GameManager {
                 this.gameStartCooldownTask.runTaskTimer(instance, 0, 20);
                 break;
             case ACTIVE:
-                if (this.gameState !=  null) this.gameStartCooldownTask.cancel(); //i
+                this.gameStartCooldownTask.cancel(); //i
                 getPlayerManager().giveKits();
                 Bukkit.broadcastMessage(CC.translate("&aGame started!"));
                 break;
