@@ -2,8 +2,11 @@ package net.montal.skywarsremake.tasks;
 
 import net.montal.skywarsremake.manager.GameManager;
 import net.montal.skywarsremake.manager.GameState;
+import net.montal.skywarsremake.manager.PlayerManager;
+import net.montal.skywarsremake.manager.SkywarsGame;
 import net.montal.skywarsremake.utils.CC;
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
 public class GameStartCooldownTask extends BukkitRunnable {
@@ -25,7 +28,13 @@ public class GameStartCooldownTask extends BukkitRunnable {
             return;
         }
 
-        Bukkit.broadcastMessage(CC.translate("&a" + timeLeft + " seconds until the game starts!"));
+
+        if (timeLeft % 5 == 0 || timeLeft <= 5) {
+            for (Player all : Bukkit.getOnlinePlayers()) {
+                all.sendTitle(CC.translate("&a" + timeLeft), CC.translate(""));
+                Bukkit.broadcastMessage(CC.translate("&aThe game starts in &b" + timeLeft + " &aseconds!"));
+            }
+        }
 
     }
 
