@@ -1,0 +1,5 @@
+name: SkywarsRemake
+version: '${project.version}'
+main: net.montal.skywarsremake.SkywarsRemake
+api-version: '1.19'
+description: A skywars remake by 4 Developers
