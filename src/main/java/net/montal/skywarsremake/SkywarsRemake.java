@@ -40,6 +40,7 @@ public final class SkywarsRemake extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        getLogger().info("Disabled.");
 
         gameManager.cleanup();
 
