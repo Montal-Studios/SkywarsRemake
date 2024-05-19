@@ -112,6 +112,7 @@ public class CC {
         if(str.contains("&5")) return DyeColor.PURPLE;
         if(str.contains("&6")) return DyeColor.ORANGE;
         if(str.contains("&7")) return DyeColor.GRAY;
+        if(str.contains("&8")) return DyeColor.LIGHT_GRAY;
         if(str.contains("&a")) return DyeColor.LIME;
         if(str.contains("&b")) return DyeColor.LIGHT_BLUE;
         if(str.contains("&d")) return DyeColor.PINK;

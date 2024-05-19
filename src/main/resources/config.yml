@@ -1,0 +1,20 @@
+#Configuration
+
+loot-items:
+  0:
+    material: DIAMOND_SWORD
+    name: '&fPower Sword'
+    enchantments:
+      DAMAGE_ALL: 1
+      DURABILITY: 1
+    chance: 0.5
+    minAmount: 1
+    maxAmount: 1
+  1:
+    material: DIAMOND_PICKAXE
+    name: '&fDiamond Pickaxe'
+    enchantments:
+      DURABILITY: 1
+    chance: 1
+    minAmount: 1
+    maxAmount: 1
