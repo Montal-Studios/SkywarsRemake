@@ -28,7 +28,6 @@ public class GameStartCooldownTask extends BukkitRunnable {
             return;
         }
 
-
         if (timeLeft % 5 == 0 || timeLeft <= 5) {
             for (Player all : Bukkit.getOnlinePlayers()) {
                 all.sendTitle(CC.translate("&a" + timeLeft), CC.translate(""));
