@@ -20,7 +20,7 @@ public class PlayerManager {
 
     public void giveKit(Player player) {
         player.getInventory().clear();
-        player.getInventory().addItem(new ItemStack(Material.WOOD_SWORD, 1));
+        player.getInventory().addItem(new ItemStack(Material.WOODEN_SWORD, 1));
     }
 
 }

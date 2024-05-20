@@ -1,6 +1,5 @@
 package net.montal.skywarsremake.manager.chests;
 
-import net.montal.skywarsremake.SkywarsRemake;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.block.Chest;

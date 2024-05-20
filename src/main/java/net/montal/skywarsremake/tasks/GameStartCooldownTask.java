@@ -2,8 +2,6 @@ package net.montal.skywarsremake.tasks;
 
 import net.montal.skywarsremake.manager.GameManager;
 import net.montal.skywarsremake.manager.GameState;
-import net.montal.skywarsremake.manager.PlayerManager;
-import net.montal.skywarsremake.manager.SkywarsGame;
 import net.montal.skywarsremake.utils.CC;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

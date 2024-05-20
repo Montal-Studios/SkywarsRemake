@@ -6,7 +6,6 @@ import co.aikar.commands.annotation.CommandPermission;
 import co.aikar.commands.annotation.Default;
 import net.montal.skywarsremake.manager.chests.ChestManager;
 import net.montal.skywarsremake.utils.CC;
-import org.bukkit.block.Chest;
 import org.bukkit.entity.Player;
 
 @CommandAlias("chestreset|resetchests")

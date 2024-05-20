@@ -5,9 +5,7 @@ import lombok.Getter;
 import net.montal.skywarsremake.command.ChestResetCommannd;
 import net.montal.skywarsremake.manager.GameManager;
 import net.montal.skywarsremake.manager.chests.ChestManager;
-import net.montal.skywarsremake.manager.chests.LootItem;
 import org.bukkit.Bukkit;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
