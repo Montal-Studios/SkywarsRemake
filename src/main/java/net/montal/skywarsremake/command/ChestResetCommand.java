@@ -10,7 +10,7 @@ import org.bukkit.entity.Player;
 
 @CommandAlias("chestreset|resetchests")
 @CommandPermission("skywars.admin")
-public class ChestResetCommannd extends BaseCommand {
+public class ChestResetCommand extends BaseCommand {
 
     private ChestManager chestManager;
 
