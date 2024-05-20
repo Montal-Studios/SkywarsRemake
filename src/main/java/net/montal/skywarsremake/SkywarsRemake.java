@@ -6,7 +6,6 @@ import net.montal.skywarsremake.command.ChestResetCommand;
 import net.montal.skywarsremake.command.MainCommand;
 import net.montal.skywarsremake.manager.GameManager;
 import net.montal.skywarsremake.manager.chests.ChestManager;
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
