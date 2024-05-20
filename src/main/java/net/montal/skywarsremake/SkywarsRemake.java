@@ -30,9 +30,9 @@ public final class SkywarsRemake extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("Enabled");
         instance = this;
-        PluginManager pm = Bukkit.getServer().getPluginManager();
+
+        getLogger().info("Enabled");
 
         getConfig().options().copyDefaults();
         saveDefaultConfig();
