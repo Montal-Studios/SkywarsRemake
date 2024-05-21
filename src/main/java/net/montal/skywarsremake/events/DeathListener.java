@@ -1,6 +1,5 @@
 package net.montal.skywarsremake.events;
 
-import net.montal.skywarsremake.SkywarsRemake;
 import net.montal.skywarsremake.manager.GameManager;
 import net.montal.skywarsremake.object.GameStateManager;
 import org.bukkit.entity.Player;

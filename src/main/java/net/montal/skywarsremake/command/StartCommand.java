@@ -5,7 +5,6 @@ import co.aikar.commands.annotation.CommandAlias;
 import co.aikar.commands.annotation.CommandPermission;
 import co.aikar.commands.annotation.Default;
 import net.montal.skywarsremake.SkywarsRemake;
-import net.montal.skywarsremake.manager.SkywarsGame;
 import net.montal.skywarsremake.tasks.GameStartCooldownTask;
 import net.montal.skywarsremake.utils.CC;
 import org.bukkit.entity.Player;

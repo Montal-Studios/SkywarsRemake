@@ -4,8 +4,8 @@ import co.aikar.commands.PaperCommandManager;
 import lombok.Getter;
 import net.montal.skywarsremake.command.ChestResetCommand;
 import net.montal.skywarsremake.command.MainCommand;
-import net.montal.skywarsremake.object.GameStateManager;
 import net.montal.skywarsremake.manager.chests.ChestManager;
+import net.montal.skywarsremake.object.GameStateManager;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 

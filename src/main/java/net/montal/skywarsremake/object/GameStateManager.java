@@ -2,16 +2,13 @@ package net.montal.skywarsremake.object;
 
 import lombok.Getter;
 import net.montal.skywarsremake.SkywarsRemake;
-import net.montal.skywarsremake.manager.PlayerManager;
 import net.montal.skywarsremake.manager.SkywarsGame;
 import net.montal.skywarsremake.tasks.GameStartCooldownTask;
-import net.montal.skywarsremake.utils.CC;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 public class GameStateManager {
 
