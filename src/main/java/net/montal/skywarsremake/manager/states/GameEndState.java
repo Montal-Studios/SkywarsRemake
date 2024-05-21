@@ -6,7 +6,7 @@ public class GameEndState extends State {
 
     @Override
     public void onStart() {
-        
+
     }
 
     @Override
