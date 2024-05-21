@@ -13,7 +13,6 @@ import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Chest;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 
 import java.util.*;
 import java.util.concurrent.Callable;
