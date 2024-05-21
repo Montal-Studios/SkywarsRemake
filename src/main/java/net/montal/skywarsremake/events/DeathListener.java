@@ -1,6 +1,8 @@
 package net.montal.skywarsremake.events;
 
 import net.montal.skywarsremake.manager.GameManager;
+import net.montal.skywarsremake.manager.SkywarsGame;
+import net.montal.skywarsremake.object.GameState;
 import net.montal.skywarsremake.object.GameStateManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -15,6 +17,9 @@ public class DeathListener implements Listener {
     @EventHandler
     public void onDeath(PlayerDeathEvent e) {
         Player user = e.getEntity();
+
+        SkywarsGame game = GameManager.getGameForPlayer(user.getPlayer());
+        if (game)
 
     }
 
