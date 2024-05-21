@@ -21,6 +21,7 @@ import java.util.concurrent.Callable;
  * Store the active games being played on the server
  */
 @UtilityClass
+@SuppressWarnings("LombokGetterMayBeUsed")
 public class GameManager {
 
     private String displayName;
