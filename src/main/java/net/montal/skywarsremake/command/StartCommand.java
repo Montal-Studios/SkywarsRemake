@@ -17,7 +17,7 @@ public class StartCommand extends BaseCommand {
     public void startGame(Player user) {
 
         user.sendMessage(CC.translate("&aYou have forced the game to start!"));
-        new GameStartCooldownTask(SkywarsRemake.getInstance().getGameManager()).startCooldown();
+        new GameStartCooldownTask(SkywarsRemake.getInstance().getGameStateManager()).startCooldown();
 
     }
 

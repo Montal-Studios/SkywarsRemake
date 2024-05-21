@@ -4,6 +4,9 @@ import co.aikar.commands.PaperCommandManager;
 import lombok.Getter;
 import net.montal.skywarsremake.command.ChestResetCommand;
 import net.montal.skywarsremake.command.MainCommand;
+import net.montal.skywarsremake.events.DamageListener;
+import net.montal.skywarsremake.events.DeathListener;
+import net.montal.skywarsremake.events.FoodLevelListener;
 import net.montal.skywarsremake.manager.chests.ChestManager;
 import net.montal.skywarsremake.object.GameStateManager;
 import org.bukkit.plugin.PluginManager;
@@ -14,7 +17,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class SkywarsRemake extends JavaPlugin {
 
     private static SkywarsRemake instance;
-    private GameStateManager gameManager;
+    private GameStateManager gameStateManager;
     private ChestManager chestManager;
 
     private PaperCommandManager manager;
@@ -38,7 +41,7 @@ public final class SkywarsRemake extends JavaPlugin {
 
         chestManager = new ChestManager(getConfig());
 
-        this.gameManager = new GameStateManager(this);
+        this.gameStateManager = new GameStateManager(this);
 
         registerCommands();
         registerListeners();
@@ -57,6 +60,9 @@ public final class SkywarsRemake extends JavaPlugin {
         PluginManager pm = getServer().getPluginManager();
 
         pm.registerEvents(chestManager, this);
+        pm.registerEvents(new DeathListener(), this);
+        pm.registerEvents(new DamageListener(), this);
+        pm.registerEvents(new FoodLevelListener(), this);
 
     }
 
@@ -64,7 +70,7 @@ public final class SkywarsRemake extends JavaPlugin {
     public void onDisable() {
         getLogger().info("Disabled.");
 
-        gameManager.cleanup();
+        gameStateManager.cleanup();
 
     }
 }
