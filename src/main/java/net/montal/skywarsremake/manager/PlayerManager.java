@@ -1,6 +1,6 @@
 package net.montal.skywarsremake.manager;
 
-import net.montal.skywarsremake.object.GameManager;
+import net.montal.skywarsremake.object.GameStateManager;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
@@ -9,9 +9,9 @@ import org.bukkit.inventory.ItemStack;
 
 public class PlayerManager {
 
-    private GameManager gameManager;
+    private GameStateManager gameManager;
 
-    public PlayerManager(GameManager gameManager) {
+    public PlayerManager(GameStateManager gameManager) {
         this.gameManager = gameManager;
     }
 

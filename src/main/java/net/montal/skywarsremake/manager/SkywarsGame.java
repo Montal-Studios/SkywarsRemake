@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import net.montal.skywarsremake.object.GamePlayer;
+import net.montal.skywarsremake.object.GameState;
 
 import java.util.List;
 
@@ -11,6 +12,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SkywarsGame {
-    private SkywarsServer server;
     private List<GamePlayer> players;
+    private GameState currentState;
 }

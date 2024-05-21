@@ -4,7 +4,7 @@ import co.aikar.commands.PaperCommandManager;
 import lombok.Getter;
 import net.montal.skywarsremake.command.ChestResetCommand;
 import net.montal.skywarsremake.command.MainCommand;
-import net.montal.skywarsremake.object.GameManager;
+import net.montal.skywarsremake.object.GameStateManager;
 import net.montal.skywarsremake.manager.chests.ChestManager;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -14,7 +14,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class SkywarsRemake extends JavaPlugin {
 
     private static SkywarsRemake instance;
-    private GameManager gameManager;
+    private GameStateManager gameManager;
     private ChestManager chestManager;
 
     private PaperCommandManager manager;
@@ -38,7 +38,7 @@ public final class SkywarsRemake extends JavaPlugin {
 
         chestManager = new ChestManager(getConfig());
 
-        this.gameManager = new GameManager(this);
+        this.gameManager = new GameStateManager(this);
 
         registerCommands();
         registerListeners();

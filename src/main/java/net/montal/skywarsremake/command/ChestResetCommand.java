@@ -21,5 +21,4 @@ public class ChestResetCommand extends BaseCommand {
         user.sendMessage(CC.translate("&aYou have reset the chests!"));
 
     }
-
 }
