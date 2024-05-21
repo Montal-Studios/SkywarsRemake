@@ -1,5 +1,6 @@
 package net.montal.skywarsremake.manager;
 
+import net.montal.skywarsremake.object.GameManager;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Material;

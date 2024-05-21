@@ -1,7 +1,8 @@
-package net.montal.skywarsremake.manager;
+package net.montal.skywarsremake.object;
 
 import lombok.Getter;
 import net.montal.skywarsremake.SkywarsRemake;
+import net.montal.skywarsremake.manager.PlayerManager;
 import net.montal.skywarsremake.tasks.GameStartCooldownTask;
 import net.montal.skywarsremake.utils.CC;
 import org.bukkit.Bukkit;
