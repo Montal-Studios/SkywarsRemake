@@ -8,6 +8,7 @@ import net.montal.skywarsremake.object.GameStateManager;
 import net.montal.skywarsremake.tasks.GameStartCooldownTask;
 import net.montal.skywarsremake.utils.CC;
 import net.montal.skywarsremake.utils.TaskManager;
+import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Chest;
@@ -71,7 +72,16 @@ public class GameManager {
     }
 
     public void activateSpectatorSettings(Player player) {
-        GamePlayer gamePlayer =
+        GamePlayer gamePlayer = getGamePlayer(player);
+
+        player.setMaxHealth(20);
+        player.setHealth(player.getMaxHealth());
+        player.setGameMode(GameMode.SPECTATOR);
+
+        if (gamePlayer != null ) {
+            switchToSpectator(gamePlayer);
+        }
+
     }
 
     public boolean atMaxCapacity() {

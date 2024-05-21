@@ -41,8 +41,6 @@ public class ChestInteractListener implements Listener {
         if (e.hasBlock() && e.getClickedBlock() != null && e.getClickedBlock().getState() instanceof Chest) {
             Chest chest = (Chest) e.getClickedBlock().getState();
 
-            if (GameManager.getO)
-
         }
 
     }
