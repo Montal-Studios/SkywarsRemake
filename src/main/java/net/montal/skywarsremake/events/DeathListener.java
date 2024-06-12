@@ -5,7 +5,6 @@ import net.montal.skywarsremake.manager.SkywarsGame;
 import net.montal.skywarsremake.object.GamePlayer;
 import net.montal.skywarsremake.object.GameState;
 import net.montal.skywarsremake.object.GameStateManager;
-import net.montal.skywarsremake.object.GameTeam;
 import net.montal.skywarsremake.utils.CC;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
